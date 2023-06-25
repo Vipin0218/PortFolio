@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #eff4fd;
+}
+nav{
+ display: flex;
+ width: 84%;
+ margin: auto;
+ padding: 20px 0;
+ align-items: center;   
+ justify-content: space-between;
+}
+.logo{
+    width: 200px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    background-color: orange;
+    color: #fff;
+    font-weight: bold;
+    transition: all 0.5;
+}
+nav ul li a:hover{
+    background-color:#fff ;
+    box-shadow: 0px 2px 10px 5px #97b1bf;
+    color: black;
+}
+nav ul li a:focus{
+    outline: none;
+}
+.dete1{
+    margin-left: 8%;
+    margin-top: 13%;
+}
+.dete1 h1{
+    font-size: 50px;
+    color: #212121;
+    margin-bottom: 20px;
+}
+span{
+color: orange;
+}
+.dete1 p{
+    color: #555;
+    line-height: 22px;
+}
+.dete1 a{
+    position: relative;
+    padding: 10px 18px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #212121;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 30px 10px;
+}
+.dete1 a::before{
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    width: 40px;
+    height: 40px;
+    border-top: 5px solid orange;
+    border-left: 5px solid orange;
+    transition: all 0.4s;
+}
+.dete1 a::after{
+    content: "";
+    position: absolute;
+    right: -10px;
+    bottom: -10px;
+    width: 40px;
+    height: 40px;
+    border-bottom: 5px solid orange;
+    border-right: 5px solid orange;
+    transition: all 0.4s;
+}
+.dete1 a:hover:before, 
+.dete1 a:hover:after{
+    width: 100%;
+    height:100%;
+}
+.image{
+      width: 45%;
+      height: 80%;
+      position: absolute;
+      bottom: 0;
+      right: 100px;
+}
+.image img{
+height: 100%;
+position: absolute;
+left: 50%;
+bottom: 0;
+transform: translateX(-50%);
+transition: bottom 1s, left 1s;
+ } 
+ .image:hover .shape{
+    bottom: 40px;
+ }
+ .image:hover .pic{
+    left: 40%;
+ }
+ 
+
+ 
